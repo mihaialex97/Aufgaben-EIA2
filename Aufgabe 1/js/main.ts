@@ -11,6 +11,7 @@ namespace Boxes {
       case 0:
         c = "#ff0000";
         break;
+      
       case 1:
       case 4:
         c = "#00ff00";
@@ -31,10 +32,7 @@ namespace Boxes {
     let div: HTMLDivElement = document.createElement("div");
     document.body.appendChild(div);
 
-    //Diese Art der CSS Zuweisung ist nicht schön und sollte vermieden werden.
-    //Eine css Datei anzulegen ist deutlich besser aber in diesem Fall nicht optimal,
-    //da jedes Objekt einige individuelle Attribute hat.
-    //Was sich gruppieren lässt, sollte stattdessen als css Klasse angelegt werden.
+    
     let s: CSSStyleDeclaration = div.style;
     s.border = "thin solid black";
     s.position = "absolute";
